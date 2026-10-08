@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking Form</title>
+</head>
+<body>
+
+    <h2>Plan Your Trip</h2>
+    <p>Fill out the form below to book your next adventure.</p>
+
+    <form action="#" method="POST">
+        
+        <!-- Full Name -->
+        <div>
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="ali ahmedt" required>
+        </div>
+        <br>
+
+        <!-- Email Address -->
+        <div>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+        </div>
+        <br>
+
+        <!-- Destination Selection -->
+        <div>
+            <label for="destination">Destination:</label><br>
+            <select id="destination" name="destination" required>
+                <option value="" disabled selected>Select your destination</option>
+                <option value="hunza">Hunza Valley, Pakistan</option>
+                <option value="skardu">Skardu, Pakistan</option>
+                <option value="dubai">Dubai, UAE</option>
+                <option value="turkey">Istanbul, Turkey</option>
+                <option value="maldives">Maldives</option>
+            </select>
+        </div>
+        <br>
+
+        <!-- Departure Date -->
+        <div>
+            <label for="dep-date">Departure Date:</label><br>
+            <input type="date" id="dep-date" name="dep_date" required>
+        </div>
+        <br>
+
+        <!-- Return Date -->
+        <div>
+            <label for="ret-date">Return Date:</label><br>
+            <input type="date" id="ret-date" name="ret_date" required>
+        </div>
+        <br>
+
+        <!-- Number of Travelers -->
+        <div>
+            <label for="travelers">Number of Travelers:</label><br>
+            <input type="number" id="travelers" name="travelers" min="1" max="10" value="1" required>
+        </div>
+        <br>
+
+        <!-- Submit Button -->
+        <div>
+            <button type="submit">Book My Trip</button>
+        </div>
+
+    </form>
+
+</body>
+</html>
