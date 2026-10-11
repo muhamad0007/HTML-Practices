@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student registration</title>
+</head>
+<body bgcolor="mistyrose">
+    <h1 align="center">Student registration form </h1>
+    <form action="/register-student" method="POST">
+        <!-- Table starts here -->
+        <table border="1" cellpadding="20" cellspacing="0" align="center" style="border-collapse: collapse; background-color: #f9f9f9;">
+            
+            <!-- Row 1: Full Name -->
+            <tr>
+                <td><label for="fullname">Full Name:</label></td>
+                <td><input type="text" id="fullname" name="fullname" required></td>
+            </tr>
+
+            <!-- Row 2: Email -->
+            <tr>
+                <td><label for="email">Email Address:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+
+            <!-- Row 3: Gender (Radio Buttons) -->
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+
+            <!-- Row 4: Course Selection (Dropdown) -->
+            <tr>
+                <td><label for="course">Select Course:</label></td>
+                <td>
+                    <select id="course" name="course">
+                        <option value="web">Web Development</option>
+                        <option value="graphic">Graphic Design</option>
+                        <option value="python">Python Programming</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Row 5: Submit Button (Using colspan to span across 2 columns) -->
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit">Register Now</button>
+                    <button type="reset">Clear Form</button>
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+</html>
